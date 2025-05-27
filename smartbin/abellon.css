@@ -1,0 +1,126 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    display: block;
+    color: white;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+input[type="submit"] {
+    background: #27ae60;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    table-layout: auto;
+}
+
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: auto;
+    max-width: 300px;
+    text-align: left;
+    white-space: normal;
+}
+
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #16a085;
+}
+
+/* Edit and Delete Button Styling */
+.operations a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.operations a.edit {
+    background: #3498db;
+    color: white;
+}
+
+.operations a.edit:hover {
+    background: #2980b9;
+}
+
+.operations a.delete {
+    background: #e74c3c;
+    color: white;
+}
+
+.operations a.delete:hover {
+    background: #c0392b;
+}
